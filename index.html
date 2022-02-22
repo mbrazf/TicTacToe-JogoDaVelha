@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <title>TicTac Toe / Jogo da Velha</title>
 </head>
 <body>
-    <section class="board circle">
-        <div class="cell x" data-cell></div>
-        <div class="cell circle" data-cell></div>
+    <h1>Tic Tac Toe / Jogo da Velha</h1>
+    <section class="board" data-board>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -21,12 +23,23 @@
     </section>
 
     <section class="winning-message" data-winning-message>
-        <p class="winning-message-text">X VENCEU</p>
-        <button class="winning-message-button">Reiniciar</button>
+        <p class="winning-message-text" data-winning-message-text>X VENCEU</p>
+        <button class="winning-message-button" data-restart-button>Reiniciar</button>
     </section>
+
+    <footer>
+        <div>
+            <h3>Feito por Marcelo Braz</h3>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/marcelobrazf/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/mbrazf" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
 
 
     <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/23cda6e370.js" crossorigin="anonymous"></script>
 </body>
 </html>
