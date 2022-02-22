@@ -8,25 +8,25 @@
     <title>TicTac Toe / Jogo da Velha</title>
 </head>
 <body>
-    <section class="board">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+    <section class="board circle">
+        <div class="cell x" data-cell></div>
+        <div class="cell circle" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
     </section>
 
-    <section class="winning-message">
-        <p>X VENCEU</p>
-        <button>Reiniciar</button>
+    <section class="winning-message" data-winning-message>
+        <p class="winning-message-text">X VENCEU</p>
+        <button class="winning-message-button">Reiniciar</button>
     </section>
 
 
 
-    <script src="index.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
